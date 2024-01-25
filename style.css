@@ -1,0 +1,106 @@
+/* Container for the cards, using flexbox */
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+/* Style for the card */
+.card {
+  width: 30%; /* Adjust as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+/* Style for the card content */
+.card-content {
+  padding: 20px;
+}
+
+/* Style for the link inside the card */
+.card-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Add a hover effect to the card */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Light theme styles */
+body.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Toggle switch styles */
+.toggle-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.switch-label {
+  margin-right: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Hide the default checkbox */
+input {
+  display: none;
+}

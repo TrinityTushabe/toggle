@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+
+    <!-- Container for the cards -->
+    <div class="card-container">
+
+        <!-- Clickable Card 1 -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Title 1</h2>
+                <p>Description of the card 1.</p>
+                <a href="https://example1.com" class="card-link">Read More</a>
+            </div>
+        </div>
+
+        <!-- Clickable Card 2 -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Title 2</h2>
+                <p>Description of the card 2.</p>
+                <a href="https://example2.com" class="card-link">Read More</a>
+            </div>
+        </div>
+
+        <!-- Clickable Card 3 -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Title 3</h2>
+                <p>Description of the card 3.</p>
+                <a href="https://example3.com" class="card-link">Read More</a>
+            </div>
+        </div>
+    </div>
+        <!-- Toggle switch -->
+        <div class="toggle-switch">
+            <span class="switch-label">Toggle Theme:</span>
+            <label class="switch">
+                <input type="checkbox" onclick="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
